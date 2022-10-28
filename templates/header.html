@@ -1,0 +1,75 @@
+<header class="header text-center">
+	<h1 class="blog-name pt-lg-4 mb-0"><a class="no-text-decoration" href="index.html">dinesh devaraj</a></h1>
+
+	<nav class="navbar navbar-expand-lg navbar-dark" >
+
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navigation" class="collapse navbar-collapse flex-column" >
+			<div class="profile-section pt-3 pt-lg-0">
+				<a href="static/images/dinesh.jpg">
+					<img class="profile-image mb-3 rounded-circle mx-auto" 
+						src="static/images/dinesh.jpg" alt="image">
+				</a>
+
+				<div class="bio mb-3">
+					Hi, my name is Dinesh Devaraj. I am Python developer and polyglot programmer with 11+ years of experience.
+				</div>
+				<ul class="social-list list-inline py-3 mx-auto">
+					<li class="list-inline-item">
+						<a href="https://www.linkedin.com/in/dinesh-devaraj-17853141/">
+						<i class="fab fa-linkedin-in fa-fw"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://github.com/DineshDevaraj">
+						<i class="fab fa-github-alt fa-fw"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://stackoverflow.com/users/2243490/dinesh">
+						<i class="fab fa-stack-overflow fa-fw"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="/index.html#top">
+						<i class="fab fa-blogger fa-fw"></i></a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://twitter.com/dineshkarur">
+						<i class="fab fa-twitter fa-fw"></i></a>
+					</li>
+				</ul><!--//social-list-->
+				<hr>
+			</div><!--//profile-section-->
+
+			<ul class="navbar-nav flex-column text-start">
+				{% if filepath == "index" %}
+					{% set indexClass = "nav-link active" %}
+					{% set aboutClass = "nav-link" %}
+				{% elif filepath == "about" %}
+					{% set indexClass = "nav-link" %}
+					{% set aboutClass = "nav-link active" %}
+				{% else %}
+					{% set indexClass = "nav-link" %}
+					{% set aboutClass = "nav-link" %}
+				{% endif %}
+				<li class="nav-item">
+					<a class="{{indexClass}}" href="index.html">
+						<i class="fas fa-bookmark fa-fw me-2"></i>Blog Post
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="{{aboutClass}}" href="about.html">
+						<i class="fas fa-user fa-fw me-2"></i>About Me
+					</a>
+				</li>
+			</ul>
+
+			<div class="my-2 my-md-3">
+				<a class="btn btn-primary" href="contact.html">Get in Touch</a>
+			</div>
+		</div>
+
+	</nav>
+
+</header>

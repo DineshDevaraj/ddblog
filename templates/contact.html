@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "head.html" %}
+
+<body>
+
+	{% include "header.html" %}
+
+    <div class="main-wrapper">
+	<section class="py-5">
+	<div class="container">
+		<div class="row">
+		<div class="col pb-5">
+		<form id="contactForm" data-sb-form-api-token="API_TOKEN">
+			<!-- Name input -->
+			<div class="mb-3">
+				<label class="form-label" for="name">Name</label>
+				<input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+				<div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+			</div>
+			<!-- Email address input -->
+			<div class="mb-3">
+				<label class="form-label" for="emailAddress">Email Address</label>
+				<input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+				<div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+				<div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+			</div>
+			<!-- Mobile number input -->
+			<div class="mb-3">
+				<label class="form-label" for="mobileNumber">Mobile Number</label>
+				<input class="form-control" id="mobileNumber" type="email" placeholder="Mobile Number" data-sb-validations="required, mobile" />
+				<div class="invalid-feedback" data-sb-feedback="mobileNumber:required">Mobile number is required.</div>
+				<div class="invalid-feedback" data-sb-feedback="mobileNumber:mobile">Mobile number is not valid.</div>
+			</div>
+			<!-- Message input -->
+			<div class="mb-3">
+				<label class="form-label" for="message">Message</label>
+				<textarea class="form-control" id="message" type="text" placeholder="Message" style="height:10rem;resize:none;" data-sb-validations="required"></textarea>
+				<div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+			</div>
+			<!-- Form submissions success message -->
+			<div class="d-none" id="submitSuccessMessage">
+				<div class="text-center mb-3">Form submission successful!</div>
+			</div>
+			<!-- Form submissions error message -->
+			<div class="d-none" id="submitErrorMessage">
+				<div class="text-center text-danger mb-3">Error sending message!</div>
+			</div>
+			<!-- Form submit button -->
+			<div class="d-grid">
+				<button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+			</div>
+		</form>
+		</div>
+		<div class="col m-4 mt-0 ps-4 contact_right_col">
+			<p><b>Contact Details</b></p>
+			<p>I would like to hear from you. Please feel free to write to the email Id or send a SMS to the mobile number.</p>
+			<ul>
+				<li class="nav-item">
+					<p><i class="fas fa-envelope-square fa-fw me-2"></i>ddinesh.software@gmail.com</p>
+				</li>
+				<li class="nav-item">
+					<p><i class="fas fa-mobile fa-fw me-2"></i>(+91) 9080410470</p>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+
+	</div><!-- container -->
+	</section><!-- article -->
+
+	{% include "footer.html" %}
+
+    </div><!--//main-wrapper-->
+	
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

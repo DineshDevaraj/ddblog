@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "head.html" %}
+
+<body>
+
+	{% with filepath="about" %}
+		{% include "header.html" %}
+	{% endwith %}
+
+    <div class="main-wrapper">
+
+	<article class="about-section py-5">
+	<div class="container">
+
+		<h2 id="top" class="title mb-3">About Me</h2>
+		<p>I am a Python developer and polyglot programmer with 11+ years of experience. I have experience in developing Network Management Systems (NMS), SNMP Agents and SNMP Sub-Agents, SNMP Managers for Telecom & Networking domain. I have experience in developing ETL jobs for Financial Services domain.</p>
+
+		<h5 class="mt-5">About The Blog</h5>
+		<p>This blog is my diary of my learnings and open source projects. When I learn an interesting topics I make it a habit to write it down in this blog. This blog helps me a lot to refresh the important topics that I learned during the course of my career journey of part 11+ years. Below I have given some of my thoughts and favourite quotes. <a href="#es">Click here</a> for <b>skills and exprience summary</b> section</p>
+
+		<h5 class="mt-5">Team Work</h5><p>
+		Hollywood movies Avatar, X-Men, Fast & Furious, Avengers and many other movies have a common message. The message is, even if you have super power, even if you are a super hero and even if you are very talented still "You need to work as a team"
+		<br/><br/>
+		Ok that’s just for fun. On serious note the importance of team work is better said by the quote "Great things in business are never done by one person. They're done by a team of people"
+		<br/>
+		<b> - Steve Jobs / Source </b><a href="http://bit.ly/2YGBcSC">http://bit.ly/2YGBcSC</a>
+
+
+		<h5 class="mt-5">Favourite Programming Quotes</h5><p>
+		“The most effective debugging tool is still careful thought, coupled with judiciously placed print statements”
+		<br/>
+		<b>- Brian Kernighan / Source </b>
+		<a href="https://bit.ly/3UOruJH" target="_blank">https://bit.ly/3UOruJH</a>
+		<br/><br/>
+
+		“Everyone knows that debugging is twice as hard as writing a program in the first place. So, if you're as clever as you can be when you write it, how will you ever debug it?”
+		<br/>
+		<b>- Brian Kernighan / Source </b>
+		<a href="https://bit.ly/3C3hnIn" target="_blank">https://bit.ly/3C3hnIn</a>
+		<br/><br/>
+
+		“Some people say, "Give the customers what they want." But that's not my approach. Our job is to figure out what they're going to want before they do. I think Henry Ford once said, "If I'd asked customers what they wanted, they would have told me, 'A faster horse!'" People don't know what they want until you show it to them. That's why I never rely on market research. Our task is to read things that are not yet on the page.”
+		<br/>
+		<b>- Steve Jobs / Source </b>
+		<a href="http://bit.ly/3ja1Dtj" target="_blank">http://bit.ly/3ja1Dtj</a>
+		<br/><br/>
+
+		“Sometimes, when discussing scalable data systems, people make comments along the lines of, “You’re not Google or Amazon. Stop worrying about scale and just use a relational database.” There is truth in that statement: building for scale that you don’t need is wasted effort and may lock you into an inflexible design. In effect, it is a form of premature optimization”
+		<br/>
+		<b>- from the book "Designing Data-Intensive Applications" by Martin Kleppmann</b>
+		<br/><br/>
+
+		“Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%”
+		<br/>
+		<b>- Donald Knuth / Source </b>
+		<a href="https://bit.ly/3CqiMKp" target="_blank">https://bit.ly/3CqiMKp</a>
+		</p>
+
+		<h5 class="mt-5">Social Media Trash</h5>
+		<p>
+		There are too many social media trash talkers, hence too much trash in social media. The blind mindless message forwarding culture and attributing it to the wrong person has made things worse. I would like to share my views on 2 such social media trash.
+		<br/><br/>
+		Smart Work: “Smart work is not a replacement for hard work but they need to complement each other. And many people seem to confused between smart work and being lazy”
+		<br/><br/>
+		Leadership: “The whole world wants to be a leader. If everyone is a leader then how will the system work. We need at least some followers; I would like to be a good follower. I don’t have any ego in doing that. Also, I don’t fancy about being a leader”
+		<br/><br/>
+		But who am I to tell this? I am just another social media trash talker. So, you need to check for yourself. Go to YouTube and see what people like Elon Musk, Steve Jobs, Arnold, Dwane Jhonson, Usain Bolt, Ronaldo, Jackie Chan, Mohamad Ali, Bruce Lee and many others have said.
+		</p>
+
+		<h5 id="es" class="mt-5">Experience Summary</h5>
+		<table class="table table-striped">
+			<tr><th>1.</th><td>Principal Engineer</td><td>Lazard</td><td>Aug.2021 to Till Date</td></tr>
+			<tr><th>2.</th><td>Associate Tech Specialist</td><td>TechM</td><td>Mar.2021 to Aug.2021 </td></tr>
+			<tr><th>3.</th><td>Tech Lead</td><td>HCL Tech</td><td>Arp.2017 to Feb.2021</td></tr>
+			<tr><th>4.</th><td>Solution Integrator</td><td>Ericsson</td><td>Apr.2015 to Apr.2017</td></tr>
+			<tr><th>5.</th><td>Software Developer</td><td>Plintron</td><td>Oct.2013 to Mar.2015</td></tr>
+			<tr><th>6.</th><td>Software Developer</td><td>Emo2</td><td>May.2011 to June.2013</td></tr>
+		</table>
+
+		<h5 class="mt-5">Primary Skills</h5>
+		<div class="form-check form-switch">
+			<input class="form-check-input" type="checkbox" role="switch" 
+				id="flexSwitchCheckDefault" onclick="toggle_view('pskills')"/>
+			<label class="form-check-label" for="flexSwitchCheckDefault">
+				Show text format</label>
+		</div>
+		<pre name="pskills">
+			<code class="language-python">{% include "pskills.py" %}</code>
+		</pre>
+		<p name="pskills" style="display:none">
+			Algorithms, Data Structure - <b>AWS</b> - EC2, ELB, Auto Scale, S3, API Gateway, Lambdas, SQS, SNS, Glue, StepFunction, CloudWatch - RDS, Redshift, OpenSearch - <b>Data Format</b> - CSV, XML, JSON - <b>Version Control</b> - Git, GitHub, Fossil SCM - <b>Concurrency</b> – Async, Multi-Threading, Multi Processing - <b>Polyglot Persistence</b> - Relational, Key-Value, Document, Columnar, Graph, Time Series - <b>Web Back End</b> - Flask, HTTP, CGI, REST, requests 
+		</p>
+
+		<h5 class="mt-5">Secondary Skills</h5>
+		<div class="form-check form-switch">
+			<input class="form-check-input" type="checkbox" role="switch" 
+				id="flexSwitchCheckDefault"  onclick="toggle_view('sskills')"/>
+			<label class="form-check-label" for="flexSwitchCheckDefault">
+				Show text format</label>
+		</div>
+		<pre name="sskills">
+			<code class="language-python">{% include "sskills.py" %}</code>
+		</pre>
+		<p name="sskills" style="display:none">
+			<b>NMS</b> - SNMP, Agent, Manager, Sub-Agent, Agent-X, Traps - <b>Network</b> - Socket, UDP, TCP, select, epoll, Proxy - <b>Data</b> - Serializing, Deserializing, Encoding, Decoding, Compression, Decompression - <b>Security</b> - Encryption, Decryption, Symmetric, Asymmetric, Public Key, Private Key, Message Digest, Digital Certificate, Sign & Verify, Certificate Authority - <b>Block Chain</b> - Proof of Work, Bitcoin - <b>Micro Service</b> - Kube, Kafka, Docker - <b>Web Front End</b> - HTML, CSS, JavaScript
+		</p>
+
+		<h5 class="mt-5">Polyglot Programming</h5>
+		<p>
+		I have worked with different popular scripting and programming languages including Bash, C/C++, Go, Java, Perl, PHP and JavaScript. Give me 15-day time and I can learn most programming language, tool or framework and deliver good performance if not the best.
+		</p>
+
+		<h5 class="mt-5">Buzz Words</h5>
+		<p>
+		In addition to my above said skills I also have good knowledge in the following latest buzz words like Availability, Performance, Scalability, Read Replicas, Sharding, Consistency, Latency, Response Time, Caching, Micro Service, Load Balancing, Synchronous, asynchronous, Event Driven, Loose coupling, Self-Documentations, etc…
+		</p>
+
+	</div><!-- container -->
+	</article><!--//about-section-->
+
+	{% include "footer.html" %}
+
+    </div><!--//main-wrapper-->
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script>hljs.highlightAll();</script>
+
+</body>
+</html>

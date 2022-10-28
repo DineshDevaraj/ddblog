@@ -1,0 +1,27 @@
+
+/*
+.header {
+	left: 175px;
+}
+
+.main-wrapper {
+	margin-left:450px;
+}
+*/
+
+.contact_right_col {
+	border-left:1px solid gray;
+}
+
+.contact_right_col ul {
+	padding:0;
+}
+
+.contact_right_col li {
+	 list-style-type:none;
+}
+
+pre {
+	font-size: 1rem;
+    tab-size: 4;
+}
